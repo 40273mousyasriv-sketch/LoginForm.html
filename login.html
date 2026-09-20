@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <h3>LOGIN FORM</h3>
+
+    <div class="LOGIN">
+
+        Username:
+        <input type="text" id="username" placeholder="username" required> <br>
+
+        Password:
+        <input type="password" id="password" placeholder="Password" required> <br>
+
+        <button onclick="login(username.value, password.value)">Login</button>
+
+    </div>
+
+    <script>
+        function login(username, password) {
+
+            if (username == "krishna" && password == "1234") {
+                alert("login successful");
+            }
+            else {
+                alert("login unsuccessful");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
